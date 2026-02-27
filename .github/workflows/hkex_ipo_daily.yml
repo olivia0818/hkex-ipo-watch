@@ -1,0 +1,37 @@
+name: HKEX IPO AP Daily
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # UTC 00:00 = HKT 08:00
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script
+        env:
+          TZ: Asia/Hong_Kong
+        run: python src/fetch_hkex_ap.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update HKEX AP daily list" || echo "No changes to commit"
+          git push
