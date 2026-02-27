@@ -1,8 +1,63 @@
 {
-  "generated_at_hkt": "2026-02-27T17:40:53.842451+08:00",
+  "generated_at_hkt": "2026-02-27T17:48:29.313101+08:00",
   "target_date_hkt": "2026-02-26",
-  "source": "HKEX AP/PHIP (deployment test mode)",
-  "count": 0,
-  "items": [],
-  "message": "Deployment test mode: replace with real HKEX scraping logic later."
+  "source": "HKEX Application Proof / PHIP page (scraped by Playwright)",
+  "count": 3,
+  "items": [
+    {
+      "applicant_name": "全文檔案",
+      "board": "Unknown",
+      "doc_type": "AP",
+      "posting_date_hkt": "2026-02-26",
+      "is_first_filing": null,
+      "sponsors": [],
+      "link": "https://www1.hkexnews.hk/app/sehk/2026/108252/documents/sehk26022601053_c.pdf",
+      "raw_row_text": "26/02/2026 申請版本（第一次呈交） 全文檔案 | 多檔案",
+      "source_node": "div"
+    },
+    {
+      "applicant_name": "勝宏科技(惠州)股份有限公司 26/02/2026 整體協調人公告－",
+      "board": "Unknown",
+      "doc_type": "AP",
+      "posting_date_hkt": "2026-02-26",
+      "is_first_filing": null,
+      "sponsors": [],
+      "link": "https://www1.hkexnews.hk/app/sehk/2026/108248/documents/sehk26022601133_c.pdf",
+      "raw_row_text": "最新發佈日期: 26/02/2026 申請人: 勝宏科技(惠州)股份有限公司 26/02/2026 整體協調人公告－委任（經修訂） 24/02/2026 申請版本（第一次呈交） 全文檔案 | 多檔案 前提交文件: 24/02/2026 整體協調人公告－委任",
+      "source_node": "tr"
+    },
+    {
+      "applicant_name": "青島特銳德電氣股份有限公司 26/02/2026 整體協調人公告－",
+      "board": "Unknown",
+      "doc_type": "AP",
+      "posting_date_hkt": "2026-02-26",
+      "is_first_filing": null,
+      "sponsors": [],
+      "link": "https://www1.hkexnews.hk/app/sehk/2026/108252/documents/sehk26022601119_c.pdf",
+      "raw_row_text": "最新發佈日期: 26/02/2026 申請人: 青島特銳德電氣股份有限公司 26/02/2026 整體協調人公告－委任 26/02/2026 申請版本（第一次呈交） 全文檔案 | 多檔案",
+      "source_node": "tr"
+    }
+  ],
+  "message": "",
+  "debug": {
+    "raw_row_count": 3310,
+    "parsed_record_count": 747,
+    "doc_type_distribution": {
+      "AP": 746,
+      "PHIP": 1
+    },
+    "top_dates": {
+      "2026-01-30": 30,
+      "2025-09-29": 26,
+      "2025-09-30": 22,
+      "2026-01-26": 20,
+      "2025-10-31": 19,
+      "2026-01-16": 18,
+      "2025-09-26": 18,
+      "2026-02-13": 17,
+      "2026-01-12": 15,
+      "2025-11-28": 15
+    },
+    "debug_dir": "data/debug"
+  }
 }
