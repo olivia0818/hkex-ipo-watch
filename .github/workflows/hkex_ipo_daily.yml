@@ -1,3 +1,4 @@
+cat > .github/workflows/hkex_ipo_daily.yml <<'EOF'
 name: HKEX IPO AP Daily
 
 on:
@@ -23,10 +24,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run script
+      - name: Install Playwright browser (Chromium)
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run scraper
         env:
           TZ: Asia/Hong_Kong
         run: python src/fetch_hkex_ap.py
+
+      - name: Send email
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python src/send_email.py
 
       - name: Commit results
         run: |
@@ -35,3 +49,4 @@ jobs:
           git add data/
           git commit -m "Update HKEX AP daily list" || echo "No changes to commit"
           git push
+EOF
