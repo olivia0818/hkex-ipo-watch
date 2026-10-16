@@ -1,0 +1,29 @@
+{
+  "generated_at_hkt": "2026-10-16T12:16:05.581211+08:00",
+  "target_date_hkt": "2026-10-15",
+  "source": "HKEX Application Proof / PHIP page (scraped by Playwright)",
+  "count": 0,
+  "items": [],
+  "message": "No new HKEX AP postings found for the previous Hong Kong calendar day.",
+  "debug": {
+    "raw_row_count": 3142,
+    "parsed_record_count": 706,
+    "doc_type_distribution": {
+      "AP": 705,
+      "PHIP": 1
+    },
+    "top_dates": {
+      "2026-06-30": 26,
+      "2026-05-29": 20,
+      "2026-08-28": 18,
+      "2026-03-31": 18,
+      "2026-04-02": 17,
+      "2026-06-12": 14,
+      "2026-04-29": 14,
+      "2026-08-21": 13,
+      "2026-08-31": 12,
+      "2026-05-28": 12
+    },
+    "debug_dir": "data/debug"
+  }
+}
