@@ -1,10 +1,33 @@
 {
-  "generated_at_hkt": "2026-10-22T12:24:54.420205+08:00",
-  "target_date_hkt": "2026-10-21",
+  "generated_at_hkt": "2026-10-23T12:30:07.904484+08:00",
+  "target_date_hkt": "2026-10-22",
   "source": "HKEX Application Proof / PHIP page (scraped by Playwright)",
-  "count": 0,
-  "items": [],
-  "message": "No new HKEX AP postings found for the previous Hong Kong calendar day.",
+  "count": 2,
+  "items": [
+    {
+      "applicant_name": "全文檔案",
+      "board": "Unknown",
+      "doc_type": "AP",
+      "posting_date_hkt": "2026-10-22",
+      "is_first_filing": null,
+      "sponsors": [],
+      "link": "https://www1.hkexnews.hk/app/sehk/2026/108966/documents/sehk26102201516_c.pdf",
+      "raw_row_text": "22/10/2026 申請版本（第一次呈交） 全文檔案 | 多檔案",
+      "source_node": "div"
+    },
+    {
+      "applicant_name": "科大智能科技股份有限公司 22/10/2026 整體協調人公告－",
+      "board": "Unknown",
+      "doc_type": "AP",
+      "posting_date_hkt": "2026-10-22",
+      "is_first_filing": null,
+      "sponsors": [],
+      "link": "https://www1.hkexnews.hk/app/sehk/2026/108966/documents/sehk26102201588_c.pdf",
+      "raw_row_text": "最新發佈日期: 22/10/2026 申請人: 科大智能科技股份有限公司 22/10/2026 整體協調人公告－委任 22/10/2026 申請版本（第一次呈交） 全文檔案 | 多檔案",
+      "source_node": "tr"
+    }
+  ],
+  "message": "",
   "debug": {
     "raw_row_count": 3086,
     "parsed_record_count": 692,
@@ -19,7 +42,7 @@
       "2026-03-31": 18,
       "2026-04-02": 17,
       "2026-06-12": 14,
-      "2026-04-29": 14,
+      "2026-04-29": 13,
       "2026-08-31": 12,
       "2026-08-21": 12,
       "2026-05-28": 12
