@@ -1,15 +1,15 @@
 {
-  "generated_at_hkt": "2026-10-29T13:30:26.962944+08:00",
-  "target_date_hkt": "2026-10-28",
+  "generated_at_hkt": "2026-10-30T13:30:40.595189+08:00",
+  "target_date_hkt": "2026-10-29",
   "source": "HKEX Application Proof / PHIP page (scraped by Playwright)",
   "count": 0,
   "items": [],
   "message": "No new HKEX AP postings found for the previous Hong Kong calendar day.",
   "debug": {
-    "raw_row_count": 3030,
-    "parsed_record_count": 679,
+    "raw_row_count": 3022,
+    "parsed_record_count": 677,
     "doc_type_distribution": {
-      "AP": 678,
+      "AP": 676,
       "PHIP": 1
     },
     "top_dates": {
